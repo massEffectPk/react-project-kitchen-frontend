@@ -9,6 +9,8 @@ import {
   LOGIN_PAGE_UNLOADED
 } from '../../constants/actionTypes';
 
+import style from './login.module.css'
+
 const mapStateToProps = state => ({ ...state.auth });
 
 const mapDispatchToProps = dispatch => ({
@@ -46,9 +48,9 @@ class Login extends React.Component {
           <div className="row">
 
             <div className="col-md-6 offset-md-3 col-xs-12">
-              <h1 className="text-xs-center">Войти</h1>
+              <h1 className={style.textHeader}>Войти</h1>
               <p className="text-xs-center">
-                <Link to="/register" className="aAccount">
+                <Link to="/register" className={style.textLinkAccount}>
                   Хотите создать аккаунт?
                 </Link>
               </p>
@@ -59,9 +61,9 @@ class Login extends React.Component {
                 <fieldset>
 
                   <fieldset className="form-group">
-                    <label className="textLabel" for="email">E-mail</label>
+                    <label className={style.textLabel} for="email">E-mail</label>
                     <input
-                      className="form-control form-control-lg inp"
+                      className={`${style.inputRegister} form-control form-control-lg`}
                       type="email"
                       id="email"
                       placeholder="E-mail"
@@ -70,9 +72,9 @@ class Login extends React.Component {
                   </fieldset>
 
                   <fieldset className="form-group">
-                  <label className="textLabel" for="password">Пароль</label>
+                  <label className={style.textLabel} for="password">Пароль</label>
                     <input
-                      className="form-control form-control-lg inp"
+                      className={`${style.inputRegister} form-control form-control-lg`}
                       type="password"
                       placeholder="Пароль"
                       id="password"
@@ -81,7 +83,7 @@ class Login extends React.Component {
                   </fieldset>
 
                   <button
-                    className="btn btn-primary pull-xs-right buttonnn"
+                    className={`btn btn-primary pull-xs-right ${style.buttonRegister}`}
                     type="submit"
                     disabled={this.props.inProgress}>
                     Войти

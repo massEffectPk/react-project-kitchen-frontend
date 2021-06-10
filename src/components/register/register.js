@@ -9,7 +9,6 @@ import {
   REGISTER_PAGE_UNLOADED
 } from '../../constants/actionTypes';
 
-import './register.css';
 import '../../fonts/fonts.css';
 import style from './register.module.css';
 
@@ -60,7 +59,7 @@ class Register extends React.Component {
             <div className="col-md-6 offset-md-3 col-xs-12">
               <h1 className={style.textHeader}>Зарегистрироваться</h1>
               <p className="text-xs-center">
-                <Link to="/login" className={style.textAccount}>
+                <Link to="/login" className={style.textLinkAccount}>
                   Уже есть аккаунт?
                 </Link>
               </p>
@@ -71,7 +70,7 @@ class Register extends React.Component {
                 <fieldset>
 
                   <fieldset className="form-group">
-                    <label className="textLabel" htmlFor="username">Имя пользователя</label>
+                    <label className={style.textLabel} htmlFor="username">Имя пользователя</label>
                     <input
                       className={`${style.inputRegister} form-control form-control-lg`}
                       type="text"
@@ -82,7 +81,7 @@ class Register extends React.Component {
                   </fieldset>
 
                   <fieldset className="form-group">
-                    <label className="textLabel" htmlFor="email">E-mail</label>
+                    <label className={style.textLabel} htmlFor="email">E-mail</label>
                     <input
                       className={`${style.inputRegister} form-control form-control-lg`}
                       type="email"
@@ -93,7 +92,7 @@ class Register extends React.Component {
                   </fieldset>
 
                   <fieldset className="form-group">
-                    <label className="textLabel" htmlFor="password">Пароль</label>
+                    <label className={style.textLabel} htmlFor="password">Пароль</label>
                     <input
                       className={`${style.inputRegister} form-control form-control-lg`}
                       type="password"

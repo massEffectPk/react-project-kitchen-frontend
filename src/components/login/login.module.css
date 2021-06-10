@@ -1,20 +1,7 @@
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/Oswald-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/EBGaramond-Regular.ttf") format("ttf");
-}
-
 .textHeader {
     font-family: 'Oswald', sans-serif;
     color: #0B0A0A;
+    text-align: center;
 }
 
 .textLabel {
@@ -22,48 +9,50 @@
     color: #0B0A0A;
 }
 
-.inp {
+.inputRegister {
     height: 40px;
     border-radius: 100px;
     border-color: transparent;
-    background: #E3E1DE;
+    background: #E3E1DE!important;
+    font-family: 'EB Garamond', serif;
 }
 
-.buttonnn {
+.buttonRegister {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.buttonRegister:focus {
     height: 40px;
     border-radius: 20px;
     background: #141414;
     border-color: #141414;
 }
 
-
-.buttonnn:focus {
+.buttonRegister:hover {
     height: 40px;
     border-radius: 20px;
     background: #141414;
     border-color: #141414;
 }
 
-.buttonnn:hover {
+.buttonRegister:active {
     height: 40px;
     border-radius: 20px;
-    background: #141414;
+    background: #434343;
     border-color: #141414;
 }
 
-.buttonnn:active {
-    height: 40px;
-    border-radius: 20px;
-    background: red;
-    border-color: #141414;
-}
-
-.aAccount {
+.textLinkAccount {
     color: #0B0A0A;
     text-decoration: underline;
+    font-family: 'EB Garamond', serif;
 }
 
-.aAccount:hover {
+.textLinkAccount:hover {
     color: #0B0A0A;
-    text-decoration: underline;
 }
