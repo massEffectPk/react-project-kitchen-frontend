@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import ListErrors from './ListErrors';
+import ListErrors from '../ListErrors';
 import React from 'react';
-import agent from '../agent';
+import agent from '../../agent';
 import { connect } from 'react-redux';
 import {
   UPDATE_FIELD_AUTH,
   LOGIN,
   LOGIN_PAGE_UNLOADED
-} from '../constants/actionTypes';
+} from '../../constants/actionTypes';
 
 const mapStateToProps = state => ({ ...state.auth });
 
@@ -46,10 +46,10 @@ class Login extends React.Component {
           <div className="row">
 
             <div className="col-md-6 offset-md-3 col-xs-12">
-              <h1 className="text-xs-center">Sign In</h1>
+              <h1 className="text-xs-center">Войти</h1>
               <p className="text-xs-center">
-                <Link to="/register">
-                  Need an account?
+                <Link to="/register" className="aAccount">
+                  Хотите создать аккаунт?
                 </Link>
               </p>
 
@@ -59,28 +59,32 @@ class Login extends React.Component {
                 <fieldset>
 
                   <fieldset className="form-group">
+                    <label className="textLabel" for="email">E-mail</label>
                     <input
-                      className="form-control form-control-lg"
+                      className="form-control form-control-lg inp"
                       type="email"
-                      placeholder="Email"
+                      id="email"
+                      placeholder="E-mail"
                       value={email}
                       onChange={this.changeEmail} />
                   </fieldset>
 
                   <fieldset className="form-group">
+                  <label className="textLabel" for="password">Пароль</label>
                     <input
-                      className="form-control form-control-lg"
+                      className="form-control form-control-lg inp"
                       type="password"
-                      placeholder="Password"
+                      placeholder="Пароль"
+                      id="password"
                       value={password}
                       onChange={this.changePassword} />
                   </fieldset>
 
                   <button
-                    className="btn btn-lg btn-primary pull-xs-right"
+                    className="btn btn-primary pull-xs-right buttonnn"
                     type="submit"
                     disabled={this.props.inProgress}>
-                    Sign in
+                    Войти
                   </button>
 
                 </fieldset>

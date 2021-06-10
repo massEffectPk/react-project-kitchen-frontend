@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Oswald-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/EBGaramond-Regular.ttf") format("ttf");
+}
+
+.textHeader {
+    font-family: 'Oswald', sans-serif;
+    color: #0B0A0A;
+}
+
+.textLabel {
+    font-family: 'EB Garamond', serif;
+    color: #0B0A0A;
+}
+
+.inp {
+    height: 40px;
+    border-radius: 100px;
+    border-color: transparent;
+    background: #E3E1DE;
+}
+
+.buttonnn {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+
+.buttonnn:focus {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+.buttonnn:hover {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+.buttonnn:active {
+    height: 40px;
+    border-radius: 20px;
+    background: red;
+    border-color: #141414;
+}
+
+.aAccount {
+    color: #0B0A0A;
+    text-decoration: underline;
+}
+
+.aAccount:hover {
+    color: #0B0A0A;
+    text-decoration: underline;
+}

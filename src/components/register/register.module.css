@@ -1,0 +1,57 @@
+.textHeader {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #0B0A0A;
+    text-align: center;
+}
+
+.textLabel {
+    font-family: 'EB Garamond', serif;
+    color: #0B0A0A;
+}
+
+.inputRegister {
+    height: 40px;
+    border-radius: 100px;
+    border-color: transparent;
+    background: #E3E1DE!important;
+}
+
+.buttonRegister {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+
+.buttonRegister:focus {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+.buttonRegister:hover {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+.buttonRegister:active {
+    height: 40px;
+    border-radius: 20px;
+    background: red;
+    border-color: #141414;
+}
+
+.textAccount {
+    color: #0B0A0A;
+    text-decoration: underline;
+}
+
+.textAccount:hover {
+    color: #0B0A0A;
+    text-decoration: underline;
+}
