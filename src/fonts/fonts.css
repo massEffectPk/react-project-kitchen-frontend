@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./EBGaramond-Regular.ttf") format("truetype");
+}

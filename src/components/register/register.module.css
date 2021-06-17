@@ -1,0 +1,59 @@
+.textHeader {
+    font-family: 'Oswald', sans-serif;
+    color: #0B0A0A;
+    text-align: center;
+}
+
+.textLabel {
+    font-family: 'EB Garamond', serif;
+    color: #0B0A0A;
+}
+
+.inputRegister {
+    height: 40px;
+    border-radius: 100px;
+    border-color: transparent;
+    background: #E3E1DE!important;
+    font-family: 'EB Garamond', serif;
+}
+
+.buttonRegister {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.buttonRegister:focus {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+.buttonRegister:hover {
+    height: 40px;
+    border-radius: 20px;
+    background: #141414;
+    border-color: #141414;
+}
+
+.buttonRegister:active {
+    height: 40px;
+    border-radius: 20px;
+    background: #434343;
+    border-color: #141414;
+}
+
+.textLinkAccount {
+    color: #0B0A0A;
+    text-decoration: underline;
+    font-family: 'EB Garamond', serif;
+}
+
+.textLinkAccount:hover {
+    color: #0B0A0A;
+
+}
